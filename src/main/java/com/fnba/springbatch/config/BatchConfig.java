@@ -72,7 +72,7 @@ public class BatchConfig {
 
     public TaskExecutor taskExecutor() {
         SimpleAsyncTaskExecutor taskExecutor = new SimpleAsyncTaskExecutor();
-        taskExecutor.setConcurrencyLimit(32);
+        taskExecutor.setConcurrencyLimit(10);
         return taskExecutor;
     }
 
